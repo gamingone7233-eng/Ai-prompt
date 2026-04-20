@@ -169,6 +169,11 @@ ul {
   transition: all var(--transition-slow);
 }
 
+.no-js .animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .animate-in.visible {
   opacity: 1;
   transform: translateY(0);

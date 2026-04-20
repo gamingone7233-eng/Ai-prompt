@@ -17,6 +17,8 @@
   const $ = (s) => document.querySelector(s);
   const $$ = (s) => document.querySelectorAll(s);
 
+  document.documentElement.classList.remove('no-js');
+
   const els = {
     categoryTabs: $('#categoryTabs'),
     subcategoryFilter: $('#subcategoryFilter'),

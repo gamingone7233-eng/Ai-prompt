@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auvora - Premium AI Prompt Library</title>
+    <meta name="description" content="1 Million+ expertly crafted AI prompts across 20 categories. Hooks, scripts, content ideas, captions, copywriting, email, SEO, branding & more. Plus 30-day plan, monetization guide & viral breakdowns.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="bg-orb bg-orb-1"></div>
+        <div class="bg-orb bg-orb-2"></div>
+        <div class="bg-orb bg-orb-3"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span class="logo-icon">✨</span>
+                <span class="logo-text">Auvora</span>
+                <span class="logo-badge">Premium</span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#prompts" class="nav-link">Prompts</a>
+                <a href="#bonuses" class="nav-link">Bonuses</a>
+                <a href="#plan" class="nav-link">30-Day Plan</a>
+                <a href="#monetization" class="nav-link">Monetize</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn-search" id="searchToggle" aria-label="Search prompts">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="btn-mobile-menu" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="search-bar" id="searchBar">
+            <div class="container">
+                <input type="text" id="searchInput" placeholder="Search 1,000,000+ prompts… (Ctrl+K)" autocomplete="off">
+                <button class="search-close" id="searchClose">&times;</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-badge animate-in">
+                <span class="badge-pulse"></span>
+                <span>🚀 1,000,000+ Prompts • 20 Categories • 125 Niches</span>
+            </div>
+            <h1 class="hero-title animate-in">
+                The Ultimate<br>
+                <span class="gradient-text">AI Prompt Library</span>
+            </h1>
+            <p class="hero-subtitle animate-in">
+                Over one million AI prompts generated from 5,000+ expert templates crossed with 125 niches, 12 platforms & dynamic variables. The most comprehensive prompt library ever created.
+            </p>
+            <div class="hero-stats animate-in">
+                <div class="stat">
+                    <div class="stat-number" data-target="1000000">0</div>
+                    <div class="stat-label">Prompts</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <div class="stat-number" data-target="20">0</div>
+                    <div class="stat-label">Categories</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <div class="stat-number" data-target="125">0</div>
+                    <div class="stat-label">Niches</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <div class="stat-number" data-target="12">0</div>
+                    <div class="stat-label">Platforms</div>
+                </div>
+            </div>
+            <div class="hero-cta animate-in">
+                <a href="#prompts" class="btn btn-primary btn-lg">
+                    Explore Prompts
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17 17 7"></path>
+                        <path d="M7 7h10v10"></path>
+                    </svg>
+                </a>
+                <a href="#bonuses" class="btn btn-ghost btn-lg">View Bonuses</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator"><div class="scroll-line"></div></div>
+    </section>
+
+    <!-- Category Showcase -->
+    <section class="categories-showcase" id="categoriesShowcase">
+        <div class="container">
+            <div class="showcase-grid" id="showcaseGrid"></div>
+        </div>
+    </section>
+
+    <!-- Prompts Section -->
+    <section class="prompts-section" id="prompts">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-tag">THE VAULT</span>
+                <h2 class="section-title">1,000,000+ AI Prompts</h2>
+                <p class="section-desc">Select your niche, pick a category, and get unlimited customized prompts. Click any prompt to copy.</p>
+            </div>
+
+            <!-- Niche & Platform Selector -->
+            <div class="selectors animate-in" id="selectors">
+                <div class="selector-group">
+                    <label class="selector-label" for="nicheSelect">Niche</label>
+                    <select class="selector-select" id="nicheSelect">
+                        <option value="">All Niches</option>
+                    </select>
+                </div>
+                <div class="selector-group">
+                    <label class="selector-label" for="platformSelect">Platform</label>
+                    <select class="selector-select" id="platformSelect">
+                        <option value="">All Platforms</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary btn-generate" id="generateBtn">
+                    Generate Prompts
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+                        <path d="M21 3v5h-5"></path>
+                        <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
+                        <path d="M8 16H3v5"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="tabs-wrapper animate-in">
+                <div class="tabs" id="categoryTabs"></div>
+            </div>
+
+            <!-- Sub-category Filter -->
+            <div class="subcategory-filter" id="subcategoryFilter"></div>
+
+            <!-- Prompt Count Display -->
+            <div class="prompt-count-bar" id="promptCountBar">
+                <span class="prompt-count-text"></span>
+                <button class="btn-shuffle" id="shuffleBtn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+                        <path d="M21 3v5h-5"></path>
+                        <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
+                        <path d="M8 16H3v5"></path>
+                    </svg>
+                    Shuffle
+                </button>
+            </div>
+
+            <!-- Prompts Grid -->
+            <div class="prompts-grid" id="promptsGrid"></div>
+
+            <!-- Load More -->
+            <div class="load-more-wrapper" id="loadMoreWrapper">
+                <button class="btn btn-outline" id="loadMoreBtn">Load More Prompts</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonuses Section -->
+    <section class="bonuses-section" id="bonuses">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-tag">BONUSES</span>
+                <h2 class="section-title">Exclusive Bonuses</h2>
+                <p class="section-desc">Ready-to-use hooks, viral breakdowns, and more premium content.</p>
+            </div>
+            <div class="bonus-block animate-in" id="readyHooks">
+                <div class="bonus-header">
+                    <div class="bonus-icon-wrap">
+                        <span class="bonus-icon">🎣</span>
+                    </div>
+                    <div>
+                        <h3 class="bonus-title">Ready-to-Use Hooks</h3>
+                        <p class="bonus-desc">50 proven hooks that grab attention instantly.</p>
+                    </div>
+                </div>
+                <div class="hooks-grid" id="hooksGrid"></div>
+            </div>
+            <div class="bonus-block animate-in" id="viralBreakdowns">
+                <div class="bonus-header">
+                    <div class="bonus-icon-wrap">
+                        <span class="bonus-icon">📈</span>
+                    </div>
+                    <div>
+                        <h3 class="bonus-title">Viral Breakdowns</h3>
+                        <p class="bonus-desc">Step-by-step breakdowns of viral content formulas.</p>
+                    </div>
+                </div>
+                <div class="breakdowns-grid" id="breakdownsGrid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 30-Day Plan -->
+    <section class="plan-section" id="plan">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-tag">ROADMAP</span>
+                <h2 class="section-title">30-Day Content Plan</h2>
+                <p class="section-desc">A structured plan to build your content empire.</p>
+            </div>
+            <div class="plan-grid" id="planGrid"></div>
+        </div>
+    </section>
+
+    <!-- Monetization -->
+    <section class="monetization-section" id="monetization">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-tag">MONETIZE</span>
+                <h2 class="section-title">Monetization Strategies</h2>
+                <p class="section-desc">Turn your content into income streams.</p>
+            </div>
+            <div class="monetization-grid" id="monetizationGrid"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <span class="logo-icon">✨</span>
+                    <span class="logo-text">Auvora</span>
+                </div>
+                <p class="footer-desc">The ultimate AI prompt library for content creators.</p>
+                <div class="footer-links">
+                    <a href="#prompts">Prompts</a>
+                    <a href="#bonuses">Bonuses</a>
+                    <a href="#plan">Plan</a>
+                    <a href="#monetization">Monetize</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+        <span id="toastMessage">Copied to clipboard!</span>
+    </div>
+
+    <!-- Scripts (order matters) -->
+    <script src="prompt-templates-1.js"></script>
+    <script src="prompt-templates-2.js"></script>
+    <script src="prompt-engine.js"></script>
+    <script src="prompts-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

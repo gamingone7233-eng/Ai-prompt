@@ -5,6 +5,8 @@ A beautifully redesigned, professional web application for discovering and using
 ## ✨ Features
 
 - **Premium Design**: Dark theme with sophisticated gradients, shadows, and animations
+- **Live on GitHub Pages**: https://gamingone7233-eng.github.io/Ai-prompt/
+- **Custom Domain**: auvora.store (via CNAME)
 - **1,000,000+ Prompts**: Generated from 5,000+ expert templates
 - **20 Categories**: Hooks, Scripts, Ideas, Captions, Copywriting, Email, SEO, Branding, Strategy, Video
 - **125 Niches**: From Fitness to Technology to Cooking and beyond
